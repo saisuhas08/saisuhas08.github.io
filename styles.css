@@ -1,0 +1,178 @@
+/* General Body and Layout */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #000000; /* Black background */
+    margin: 0;
+    padding: 0;
+    color: #E0E0E0; /* Light gray text */
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: #121212;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+    animation: slideDown 1s ease-in-out;
+}
+
+/* Profile Section in Header */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.classic-name {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #00CED1; /* Teal for accent */
+    font-family: 'Merriweather', serif; /* Professional font */
+    text-shadow: 0 0 5px rgba(0, 206, 209, 0.8), 0 0 15px rgba(0, 206, 209, 0.8);
+}
+
+.resume-button {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.5rem 1.2rem;
+    background-color: #00CED1;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.resume-button:hover {
+    background-color: #008B8B;
+    transform: scale(1.1);
+}
+
+/* Menu Bar */
+.menu-bar {
+    margin-left: auto;
+}
+
+.menu-bar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-bar ul li a {
+    color: #E0E0E0; /* Light gray links */
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.menu-bar ul li a:hover {
+    color: #00CED1; /* Teal on hover */
+}
+
+/* Section Styling */
+section {
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 800px;
+    text-align: center;
+    background-color: #1A1A1A;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+section h2 {
+    margin-bottom: 1rem;
+    color: #00CED1;
+    animation: pulse 2s infinite;
+}
+
+.skills-list li {
+    margin: 10px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem 0;
+    background: #121212;
+}
+
+a {
+    color: #00CED1;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #008B8B;
+}
+
+/* Animations */
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
